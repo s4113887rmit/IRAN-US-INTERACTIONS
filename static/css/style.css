@@ -247,3 +247,135 @@ main {
   letter-spacing: 1px;
   margin-top: 3rem;
 }
+
+/* Additional styles for page 3 consequences content */
+.consequences-list {
+  background: #f7fbff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+  border: 1px solid #d9e2ff;
+}
+
+.consequences-list li {
+  margin-bottom: 0.75rem;
+  padding: 0.75rem;
+  background: #ffffff;
+  border-left: 4px solid #ffbf00;
+}
+
+.impact-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: #ffffff;
+}
+
+.impact-table th,
+.impact-table td {
+  border: 1px solid #d7dee7;
+  padding: 14px;
+  text-align: left;
+}
+
+.impact-table th {
+  background: #ffeef0;
+  color: #8b0000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.impact-table tr:nth-child(even) {
+  background: #fff8f9;
+}
+
+.relations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.relation-card {
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #d7dee7;
+}
+
+.relation-card.strained {
+  background: #fff8f9;
+  border-top: 4px solid #8b0000;
+}
+
+.relation-card.strengthened {
+  background: #f0fff8;
+  border-top: 4px solid #239e46;
+}
+
+.relation-card h4 {
+  margin-top: 0;
+  color: #002868;
+  text-transform: uppercase;
+  font-size: 1.15rem;
+}
+
+.relation-card ul {
+  margin: 0.5rem 0 0 0;
+  padding-left: 1rem;
+}
+
+.relation-card li {
+  margin-bottom: 0.5rem;
+  color: #4a525d;
+}
+
+.recovery-timeline {
+  margin-top: 1.5rem;
+}
+
+.phase {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8fbff;
+  border-radius: 10px;
+  border-left: 4px solid #239e46;
+}
+
+.phase h4 {
+  margin-top: 0;
+  color: #002868;
+  font-size: 1.2rem;
+}
+
+.phase p {
+  margin-bottom: 0;
+  color: #4a525d;
+}
+
+.lessons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.lesson-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border: 1px solid #d7dee7;
+  border-radius: 10px;
+  border-top: 4px solid #002868;
+}
+
+.lesson-card h4 {
+  margin-top: 0;
+  color: #002868;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+}
+
+.lesson-card p {
+  margin-bottom: 0;
+  color: #4a525d;
+  line-height: 1.6;
+}
