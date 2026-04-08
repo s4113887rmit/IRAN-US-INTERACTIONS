@@ -1,24 +1,39 @@
+:root {
+  --primary-blue: #002868;
+  --primary-red: #bf0a30;
+  --primary-green: #239e46;
+  --dark-bg: #1a1a1a;
+  --light-text: #f4f4f4;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  background: #f8f9fa;
+  background-color: #f0f2f5;
+  color: #333;
 }
+
 header {
-  background: #343a40;
-  color: #fff;
-  padding: 1rem;
-}
-nav a {
-  color: #fff;
-  margin-right: 1rem;
-  text-decoration: none;
+  background: linear-gradient(90deg, var(--primary-blue) 50%, var(--primary-green) 50%);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .nav {
   display: flex;
   align-items: center;
   gap: 1rem;
+  background: #333;
+  padding: 1rem;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .dropdown {
@@ -58,6 +73,177 @@ nav a {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 main {
   padding: 2rem;
+}
+
+/* War-themed styles for 2026 Iran-US conflict */
+.war-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.status-alert {
+  background: #8b0000;
+  color: #ffcc00;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 2px solid #ffcc00;
+  margin-bottom: 2rem;
+  font-family: 'Courier New', monospace;
+}
+
+.war-section {
+  background: #2b2b2b;
+  border: 2px solid #444;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.war-section h1 {
+  color: #8b0000;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  border-bottom: 4px solid #ffcc00;
+  padding-bottom: 1rem;
+}
+
+.war-section h2 {
+  color: #ffcc00;
+  text-transform: uppercase;
+  margin-top: 0;
+  border-bottom: 2px solid #8b0000;
+  padding-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.critical-event {
+  background: #330000;
+  border-left: 5px solid #ff4444;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  color: #ffcccc;
+  font-weight: bold;
+}
+
+.combat-log {
+  border-left: 3px solid #ffcc00;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+.log-entry {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #1a1a1a;
+  border-radius: 5px;
+}
+
+.log-date {
+  color: #ffcc00;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.casualty-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: #1a1a1a;
+}
+
+.casualty-table th,
+.casualty-table td {
+  border: 1px solid #555;
+  padding: 12px;
+  text-align: left;
+}
+
+.casualty-table th {
+  background: #333;
+  color: #ffcc00;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.casualty-table tr:nth-child(even) {
+  background: #2a2a2a;
+}
+
+.ceasefire-terms {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+
+.ceasefire-terms li {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background: #2a2a2a;
+  border-left: 3px solid #ffcc00;
+}
+
+.diplomatic-note {
+  background: #003300;
+  border: 2px solid #00aa00;
+  padding: 1rem;
+  margin-top: 1rem;
+  color: #ccffcc;
+  font-style: italic;
+  text-align: center;
+}
+
+.implications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.implication-card {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border: 1px solid #444;
+  border-radius: 5px;
+  border-top: 3px solid #8b0000;
+}
+
+.implication-card h3 {
+  color: #ffcc00;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.footer-note {
+  text-align: center;
+  padding: 2rem;
+  background: #000;
+  color: #ffcc00;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 3rem;
 }
