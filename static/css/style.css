@@ -2,11 +2,12 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f8f9fa;
+  background: #f4f5f7;
+  color: #222;
 }
 header {
-  background: #343a40;
-  color: #fff;
+  background: #1d1f25;
+  color: #ffffff;
   padding: 1rem;
 }
 nav a {
@@ -14,50 +15,46 @@ nav a {
   margin-right: 1rem;
   text-decoration: none;
 }
-
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropbtn {
-  background: transparent;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
-  right: 0;
-}
-
-.dropdown-content a {
-  color: #333;
-  padding: 10px 12px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 main {
   padding: 2rem;
+}
+
+.war-hero {
+  background: linear-gradient(135deg, #002868 40%, #239e46 60%);
+  color: #fff;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.war-hero h1 {
+  margin-top: 0;
+  font-size: 2.4rem;
+}
+
+.war-hero .lead {
+  max-width: 760px;
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  opacity: 0.95;
+}
+
+.war-section {
+  background: #ffffff;
+  border: 1px solid #dfe2e8;
+  border-left: 6px solid #bf0a30;
+  border-radius: 10px;
+  padding: 1.75rem;
+  margin-bottom: 1.75rem;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+}
+
+.war-section h2 {
+  color: #002868;
+  margin-top: 0;
+}
+
+.war-section p {
+  margin: 0.85rem 0;
+  color: #2b2b2b;
 }

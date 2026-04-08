@@ -1,103 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< Updated upstream
-    <title>Conflict Report: 2026 Iran-US War</title>
-    <style>
-        :root {
-            --war-red: #8b0000;
-            --combat-gray: #2b2b2b;
-            --alert-gold: #ffcc00;
-            --text-light: #fdfdfd;
-        }
+{% extends "base.html" %}
 
-        body {
-            font-family: 'Consolas', 'Courier New', monospace;
-            background-color: #121212;
-            color: #e0e0e0;
-            margin: 0;
-            line-height: 1.5;
-        }
+{% block content %}
+<section class="war-hero">
+    <h1>Recent Iran–USA Conflict Overview</h1>
+    <p class="lead">A high-level summary of the latest incidents, strategic context, and international reactions in the Iran–United States crisis.</p>
+</section>
 
-        header {
-            background: var(--war-red);
-            padding: 2rem;
-            text-align: center;
-            border-bottom: 4px solid var(--alert-gold);
-        }
+<section class="war-section">
+    <h2>Recent Events</h2>
+    <p>The latest escalation involves a series of military and diplomatic actions across the Middle East, including aerial engagements, cyber incidents, and targeted sanctions.</p>
+    <p>The situation remains fluid as both capitals monitor risks to regional stability and global energy markets.</p>
+</section>
 
-        .status-bar {
-            background: #000;
-            color: var(--alert-gold);
-            padding: 10px;
-            text-align: center;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            border-bottom: 1px solid #444;
-        }
+<section class="war-section">
+    <h2>Impact and Response</h2>
+    <p>International organizations have called for de-escalation and increased dialogue, while allies of both sides are closely coordinating humanitarian and security responses.</p>
+    <p>Public attention is focused on preventing broader conflict and protecting civilian infrastructure.</p>
+</section>
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        .intel-card {
-            background: var(--combat-gray);
-            border: 1px solid #444;
-            padding: 20px;
-            margin-bottom: 30px;
-            position: relative;
-        }
-
-        .intel-card h2 {
-            color: var(--war-red);
-            text-transform: uppercase;
-            margin-top: 0;
-            border-bottom: 1px solid var(--war-red);
-        }
-
-        .event-log {
-            border-left: 2px dashed var(--alert-gold);
-=======
-    <title>Iran & USA: A Geopolitical Overview</title>
-    <style>
-        :root {
-            --primary-blue: #002868; /* US Blue */
-            --primary-red: #bf0a30;  /* US Red */
-            --primary-green: #239e46; /* Iran Green */
-            --dark-bg: #1a1a1a;
-            --light-text: #f4f4f4;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            background-color: #f0f2f5;
-            color: #333;
-        }
-
-        header {
-            background: linear-gradient(90deg, var(--primary-blue) 50%, var(--primary-green) 50%);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-
-        nav {
-            background: #333;
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav a {
+<section class="war-section">
+    <h2>Outlook</h2>
+    <p>Diplomatic channels are the primary route for reducing tensions, though the risk of further engagements remains present until clear agreements are made.</p>
+</section>
+{% endblock %}
             color: white;
             margin: 0 15px;
             text-decoration: none;
