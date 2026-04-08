@@ -1,6 +1,201 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conflict Report: 2026 Iran-US War</title>
+    <style>
+        :root {
+            --war-red: #8b0000;
+            --combat-gray: #2b2b2b;
+            --alert-gold: #ffcc00;
+            --text-light: #fdfdfd;
+        }
 
-{% block content %}
-<h1>Page 2</h1>
-<p>This page is intentionally empty for initial structure.</p>
-{% endblock %}
+        body {
+            font-family: 'Consolas', 'Courier New', monospace;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        header {
+            background: var(--war-red);
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 4px solid var(--alert-gold);
+        }
+
+        .status-bar {
+            background: #000;
+            color: var(--alert-gold);
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 1px solid #444;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .intel-card {
+            background: var(--combat-gray);
+            border: 1px solid #444;
+            padding: 20px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .intel-card h2 {
+            color: var(--war-red);
+            text-transform: uppercase;
+            margin-top: 0;
+            border-bottom: 1px solid var(--war-red);
+        }
+
+        .event-log {
+            border-left: 2px dashed var(--alert-gold);
+            padding-left: 20px;
+            margin-left: 10px;
+        }
+
+        .log-entry {
+            margin-bottom: 25px;
+        }
+
+        .log-date {
+            color: var(--alert-gold);
+            font-weight: bold;
+        }
+
+        .casualty-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .casualty-table th, .casualty-table td {
+            border: 1px solid #555;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .casualty-table th {
+            background: #333;
+        }
+
+        .map-placeholder {
+            background: #1a1a1a;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #444;
+            margin: 15px 0;
+            color: #666;
+            font-style: italic;
+        }
+
+        .warning {
+            color: #ff4444;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="status-bar">
+    [ SYSTEM STATUS: 14-DAY CEASEFIRE ACTIVE AS OF APRIL 08, 2026 ]
+</div>
+
+<header>
+    <h1>OPERATION EPIC FURY</h1>
+    <p>Tactical Summary: US-Iran Military Interactions</p>
+</header>
+
+<div class="container">
+    
+    <section class="intel-card">
+        <h2>Strategic Overview</h2>
+        <p>The conflict erupted on <strong>February 28, 2026</strong>, following the collapse of nuclear negotiations. The US and Israel initiated high-intensity kinetic operations aimed at degrading Iranian nuclear capabilities and leadership infrastructure.</p>
+        <p class="warning">Significant Event: The assassination of Supreme Leader Ali Khamenei in initial strikes triggered immediate regional escalation.</p>
+    </section>
+
+    <section class="intel-card">
+        <h2>Combat Log (2026)</h2>
+        <div class="event-log">
+            <div class="log-entry">
+                <span class="log-date">FEB 28</span>
+                <p><strong>Initial Salvo:</strong> Large-scale joint US-Israeli airstrikes target Tehran and nuclear sites. Death of top Iranian officials confirmed.</p>
+            </div>
+            <div class="log-entry">
+                <span class="log-date">MAR 09-12</span>
+                <p><strong>Urban Warfare:</strong> Missile strikes on residential areas in Tehran. Iran retaliates with ballistic missiles targeting US bases in Qatar, Bahrain, and Jordan.</p>
+            </div>
+            <div class="log-entry">
+                <span class="log-date">MAR 21 - APR 01</span>
+                <p><strong>Maritime Siege:</strong> Iran closes the <strong>Strait of Hormuz</strong>. US President Trump threatens "total demolition" of energy infrastructure (Kharg Island) if shipping remains blocked.</p>
+            </div>
+            <div class="log-entry">
+                <span class="log-date">APR 02-04</span>
+                <p><strong>Air Engagement:</strong> Iran shoots down a US F-15E and an A-10 aircraft. CENTCOM executes a high-risk rescue mission near a major Iranian city to recover crew members.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="intel-card">
+        <h2>Estimated Casualties & Losses</h2>
+        <table class="casualty-table">
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>United States/Allies</th>
+                    <th>Iran</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Personnel Killed</td>
+                    <td>~30 (US/Israel)</td>
+                    <td>6,000+ (Military) / 2,000+ (Civilian)</td>
+                </tr>
+                <tr>
+                    <td>Asset Losses</td>
+                    <td>17+ Bases Damaged / F-15E Downing</td>
+                    <td>150+ Naval Vessels / 190+ Missile Launchers</td>
+                </tr>
+                <tr>
+                    <td>Economic Impact</td>
+                    <td>$18B Combat Costs (to date)</td>
+                    <td>Infrastructure Collapse / Oil Export Halt</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="intel-card">
+        <h2>Current Ceasefire Terms</h2>
+        <p>Brokered by Pakistan and China, the April 8th ceasefire includes:</p>
+        <ul>
+            <li>Immediate 14-day halt of all offensive air and missile operations.</li>
+            <li>Negotiations regarding the permanent opening of the Strait of Hormuz.</li>
+            <li>New leadership protocols in Iran under Mojtaba Khamenei.</li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    <center>
+        <p>INTERNAL DATA USE ONLY - UPDATED 16:51:21 | 08 APR 2026</p>
+    </center>
+</footer>
+
+</body>
+</html>
