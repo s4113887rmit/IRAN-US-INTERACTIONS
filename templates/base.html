@@ -3,20 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iran–US Interactions</title>
+    <title>Flask App</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav">
             <a href="/">Home</a>
-            <a href="/page1">Page 1</a>
-            <a href="/page2">Page 2</a>
-            <a href="/page3">Page 3</a>
+            <div class="dropdown">
+                <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Pages ▾</button>
+                <div class="dropdown-content" role="menu" aria-label="Pages">
+                    <a href="/page1" role="menuitem">Page 1</a>
+                    <a href="/page2" role="menuitem">Page 2</a>
+                    <a href="/page3" role="menuitem">Page 3</a>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         {% block content %}{% endblock %}
     </main>
+        <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            var btn = document.querySelector('.dropbtn');
+            var menu = document.querySelector('.dropdown-content');
+            if(!btn || !menu) return;
+            btn.addEventListener('click', function(e){
+                e.stopPropagation();
+                var expanded = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', String(!expanded));
+                if(!expanded) { menu.style.display = 'block'; } else { menu.style.display = 'none'; }
+            });
+            document.addEventListener('click', function(e){
+                if(!e.target.closest('.dropdown')){
+                    btn.setAttribute('aria-expanded','false');
+                    menu.style.display = 'none';
+                }
+            });
+        });
+        </script>
 </body>
 </html>
