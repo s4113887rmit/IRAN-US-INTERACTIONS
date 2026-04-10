@@ -1,6 +1,71 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Home</h1>
-<p>This is the home page with empty content.</p>
+<div class="war-container">
+	<h1>Home — Latest Briefings</h1>
+	<p class="subtitle">Fast summaries from the three reports. Click to read more.</p>
+
+	<div class="carousel" id="newsCarousel" aria-live="polite">
+		<div class="carousel-track" id="carouselTrack">
+			<div class="slide" data-source="page1">
+				<h3>Initial State: How the War Began</h3>
+				<p>A concise account of the political, diplomatic, and kinetic triggers that pushed tensions into open conflict. <a href="/page1">Read more →</a></p>
+			</div>
+			<div class="slide" data-source="page2">
+				<h3>Operation Epic Fury — Overview</h3>
+				<p>Strategic overview and timeline of major operations, critical events, and current status updates. <a href="/page2">Read more →</a></p>
+			</div>
+			<div class="slide" data-source="page3">
+				<h3>Consequences & Global Impact</h3>
+				<p>Analysis of the long-term economic, humanitarian, and geopolitical consequences of the 2026 conflict. <a href="/page3">Read more →</a></p>
+			</div>
+		</div>
+		<div class="carousel-nav" id="carouselNav" aria-hidden="false">
+			<div class="dot active" data-index="0"></div>
+			<div class="dot" data-index="1"></div>
+			<div class="dot" data-index="2"></div>
+		</div>
+	</div>
+
+	<div class="page-tiles">
+		<div class="tile">
+			<h4>How the War Began</h4>
+			<p>Initial state briefing covering failed diplomacy, covert actions, and the first strikes.</p>
+			<a href="/page1">Open</a>
+		</div>
+		<div class="tile">
+			<h4>Operation Epic Fury</h4>
+			<p>Strategic overview, timeline, and casualty impact from the 2026 campaign.</p>
+			<a href="/page2">Open</a>
+		</div>
+		<div class="tile">
+			<h4>Consequences & Recovery</h4>
+			<p>Long-term effects on energy, humanitarian conditions, and international relations.</p>
+			<a href="/page3">Open</a>
+		</div>
+	</div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+	const track = document.getElementById('carouselTrack');
+	const dots = Array.from(document.querySelectorAll('.dot'));
+	let index = 0;
+	const slideCount = track.children.length;
+	let timer = null;
+
+	function goTo(i){
+		index = (i + slideCount) % slideCount;
+		track.style.transform = `translateX(-${index * 100}%)`;
+		dots.forEach(d => d.classList.remove('active'));
+		dots[index].classList.add('active');
+	}
+
+	dots.forEach(d => d.addEventListener('click', () => { goTo(Number(d.dataset.index)); resetTimer(); }));
+
+	function startTimer(){ timer = setInterval(() => goTo(index+1), 5000); }
+	function resetTimer(){ clearInterval(timer); startTimer(); }
+	startTimer();
+});
+</script>
 {% endblock %}

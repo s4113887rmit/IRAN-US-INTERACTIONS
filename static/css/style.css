@@ -379,3 +379,62 @@ main {
   color: #4a525d;
   line-height: 1.6;
 }
+
+/* Homepage carousel and page tiles */
+.carousel {
+  position: relative;
+  max-width: 1000px;
+  margin: 1.5rem auto 2.5rem;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(15,23,42,0.08);
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #ffffff 0%, #f6f9ff 100%);
+  padding: 2rem;
+}
+.slide h3 {
+  margin: 0 0 0.5rem 0;
+  color: #002868;
+  text-transform: uppercase;
+}
+.slide p { color: #4a525d; }
+.carousel-nav {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  display: flex;
+  gap: 8px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(29,31,33,0.15);
+  cursor: pointer;
+}
+.dot.active { background: #239e46; }
+
+.page-tiles {
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+.tile {
+  background: #ffffff;
+  padding: 1.25rem;
+  border: 1px solid #d7dee7;
+  border-radius: 10px;
+  text-align: left;
+}
+.tile h4 { margin: 0 0 0.5rem 0; color: #002868; }
+.tile p { margin: 0; color: #4a525d; }
+.tile a { display: inline-block; margin-top: 0.75rem; color: #002868; font-weight:700; text-decoration:none; }
