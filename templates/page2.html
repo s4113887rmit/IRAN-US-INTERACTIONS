@@ -1,239 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< Updated upstream
-    <title>Conflict Report: 2026 Iran-US War</title>
-    <style>
-        :root {
-            --war-red: #8b0000;
-            --combat-gray: #2b2b2b;
-            --alert-gold: #ffcc00;
-            --text-light: #fdfdfd;
-        }
+{% extends "base.html" %}
 
-        body {
-            font-family: 'Consolas', 'Courier New', monospace;
-            background-color: #121212;
-            color: #e0e0e0;
-            margin: 0;
-            line-height: 1.5;
-        }
+{% block content %}
+<h1>The 2026 Iran-US War: Operation Epic Fury</h1>
+<p class="subtitle">A Comprehensive Analysis of the Recent Conflict</p>
 
-        header {
-            background: var(--war-red);
-            padding: 2rem;
-            text-align: center;
-            border-bottom: 4px solid var(--alert-gold);
-        }
+<div class="war-container">
+    <div class="status-alert">
+        <strong>⚠️ CURRENT STATUS:</strong> 14-DAY CEASEFIRE ACTIVE AS OF APRIL 08, 2026
+    </div>
 
-        .status-bar {
-            background: #000;
-            color: var(--alert-gold);
-            padding: 10px;
-            text-align: center;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            border-bottom: 1px solid #444;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        .intel-card {
-            background: var(--combat-gray);
-            border: 1px solid #444;
-            padding: 20px;
-            margin-bottom: 30px;
-            position: relative;
-        }
-
-        .intel-card h2 {
-            color: var(--war-red);
-            text-transform: uppercase;
-            margin-top: 0;
-            border-bottom: 1px solid var(--war-red);
-        }
-
-        .event-log {
-            border-left: 2px dashed var(--alert-gold);
-=======
-    <title>Iran & USA: A Geopolitical Overview</title>
-    <style>
-        :root {
-            --primary-blue: #002868; /* US Blue */
-            --primary-red: #bf0a30;  /* US Red */
-            --primary-green: #239e46; /* Iran Green */
-            --dark-bg: #1a1a1a;
-            --light-text: #f4f4f4;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            background-color: #f0f2f5;
-            color: #333;
-        }
-
-        header {
-            background: linear-gradient(90deg, var(--primary-blue) 50%, var(--primary-green) 50%);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-
-        nav {
-            background: #333;
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        section {
-            background: white;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        h2 {
-            border-bottom: 3px solid var(--primary-red);
-            padding-bottom: 10px;
-            color: var(--primary-blue);
-        }
-
-        .timeline {
-            border-left: 4px solid #ccc;
->>>>>>> Stashed changes
-            padding-left: 20px;
-            margin-left: 10px;
-        }
-
-<<<<<<< Updated upstream
-        .log-entry {
-            margin-bottom: 25px;
-        }
-
-        .log-date {
-            color: var(--alert-gold);
-            font-weight: bold;
-        }
-
-        .casualty-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-        }
-
-        .casualty-table th, .casualty-table td {
-            border: 1px solid #555;
-            padding: 10px;
-            text-align: left;
-        }
-
-        .casualty-table th {
-            background: #333;
-        }
-
-        .map-placeholder {
-            background: #1a1a1a;
-            height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #444;
-            margin: 15px 0;
-            color: #666;
-            font-style: italic;
-        }
-
-        .warning {
-            color: #ff4444;
-            font-weight: bold;
-=======
-        .timeline-item {
-            margin-bottom: 2rem;
-            position: relative;
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -28px;
-            top: 5px;
-            width: 12px;
-            height: 12px;
-            background: var(--primary-red);
-            border-radius: 50%;
-        }
-
-        .date {
-            font-weight: bold;
-            color: var(--primary-red);
-            display: block;
-        }
-
-        .highlight-box {
-            background: #fff3f3;
-            border-left: 5px solid var(--primary-red);
-            padding: 1rem;
-            margin: 1rem 0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background: var(--dark-bg);
-            color: var(--light-text);
->>>>>>> Stashed changes
-        }
-    </style>
-</head>
-<body>
-
-<<<<<<< Updated upstream
-<div class="status-bar">
-    [ SYSTEM STATUS: 14-DAY CEASEFIRE ACTIVE AS OF APRIL 08, 2026 ]
-</div>
-
-<header>
-    <h1>OPERATION EPIC FURY</h1>
-    <p>Tactical Summary: US-Iran Military Interactions</p>
-</header>
-
-<div class="container">
-    
-    <section class="intel-card">
+    <section class="war-section">
         <h2>Strategic Overview</h2>
         <p>The conflict erupted on <strong>February 28, 2026</strong>, following the collapse of nuclear negotiations. The US and Israel initiated high-intensity kinetic operations aimed at degrading Iranian nuclear capabilities and leadership infrastructure.</p>
-        <p class="warning">Significant Event: The assassination of Supreme Leader Ali Khamenei in initial strikes triggered immediate regional escalation.</p>
+        <div class="critical-event">
+            <strong>CRITICAL EVENT:</strong> The assassination of Supreme Leader Ali Khamenei in initial strikes triggered immediate regional escalation.
+        </div>
     </section>
 
-    <section class="intel-card">
-        <h2>Combat Log (2026)</h2>
-        <div class="event-log">
+    <section class="war-section">
+        <h2>Combat Timeline (2026)</h2>
+        <div class="combat-log">
             <div class="log-entry">
                 <span class="log-date">FEB 28</span>
                 <p><strong>Initial Salvo:</strong> Large-scale joint US-Israeli airstrikes target Tehran and nuclear sites. Death of top Iranian officials confirmed.</p>
@@ -249,48 +35,16 @@
             <div class="log-entry">
                 <span class="log-date">APR 02-04</span>
                 <p><strong>Air Engagement:</strong> Iran shoots down a US F-15E and an A-10 aircraft. CENTCOM executes a high-risk rescue mission near a major Iranian city to recover crew members.</p>
-=======
-<header>
-    <h1>Iran & United States Relations</h1>
-    <p>A Comprehensive Timeline of Interaction, Conflict, and Diplomacy</p>
-</header>
-
-<nav>
-    <center>
-        <a href="#history">Historical Roots</a>
-        <a href="#recent">2026 Conflict</a>
-        <a href="#current">Current Status</a>
-    </center>
-</nav>
-
-<div class="container">
-    
-    <section id="history">
-        <h2>Historical Milestones</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <span class="date">1953: The Coup</span>
-                <p>The CIA and UK intelligence back a coup to overthrow Iran's democratically elected Prime Minister, Mohammad Mosaddegh, reinstating the Shah to protect Western oil interests.</p>
-            </div>
-            <div class="timeline-item">
-                <span class="date">1979: Islamic Revolution & Hostage Crisis</span>
-                <p>The Shah is overthrown, and Ayatollah Khomeini takes power. In November, radical students storm the US Embassy in Tehran, holding 52 Americans hostage for 444 days.</p>
-            </div>
-            <div class="timeline-item">
-                <span class="date">2015: The JCPOA (Nuclear Deal)</span>
-                <p>Iran and world powers (led by the US) sign a landmark deal to limit Iran’s nuclear program in exchange for sanctions relief. The US later withdrew in 2018 under the Trump administration.</p>
->>>>>>> Stashed changes
             </div>
         </div>
     </section>
 
-<<<<<<< Updated upstream
-    <section class="intel-card">
-        <h2>Estimated Casualties & Losses</h2>
+    <section class="war-section">
+        <h2>Casualties & Strategic Impact</h2>
         <table class="casualty-table">
             <thead>
                 <tr>
-                    <th>Metric</th>
+                    <th>Category</th>
                     <th>United States/Allies</th>
                     <th>Iran</th>
                 </tr>
@@ -315,59 +69,40 @@
         </table>
     </section>
 
-    <section class="intel-card">
-        <h2>Current Ceasefire Terms</h2>
+    <section class="war-section">
+        <h2>Current Ceasefire Agreement</h2>
         <p>Brokered by Pakistan and China, the April 8th ceasefire includes:</p>
-        <ul>
-            <li>Immediate 14-day halt of all offensive air and missile operations.</li>
-            <li>Negotiations regarding the permanent opening of the Strait of Hormuz.</li>
-            <li>New leadership protocols in Iran under Mojtaba Khamenei.</li>
+        <ul class="ceasefire-terms">
+            <li>Immediate 14-day halt of all offensive air and missile operations</li>
+            <li>Negotiations regarding the permanent opening of the Strait of Hormuz</li>
+            <li>New leadership protocols in Iran under Mojtaba Khamenei</li>
+            <li>International monitoring of nuclear facilities</li>
         </ul>
-=======
-    <section id="recent">
-        <h2>The 2026 Conflict (Operation Epic Fury)</h2>
-        <div class="highlight-box">
-            <strong>Key Update:</strong> On February 28, 2026, the US and Israel launched joint airstrikes targeting Iranian military infrastructure and leadership.
+        <div class="diplomatic-note">
+            Diplomatic efforts continue to transform this temporary truce into a lasting peace agreement.
         </div>
-        <ul>
-            <li><strong>February 28, 2026:</strong> Start of "Operation Epic Fury." High-ranking Iranian officials were targeted in initial waves.</li>
-            <li><strong>Iranian Retaliation:</strong> Iran responded with hundreds of drone and ballistic missile strikes against US bases in the region and shipping in the Strait of Hormuz.</li>
-            <li><strong>Global Impact:</strong> The conflict led to a significant disruption in global oil trade and energy prices.</li>
-        </ul>
     </section>
 
-    <section id="current">
-        <h2>Current Status: Two-Week Ceasefire</h2>
-        <p>As of <strong>April 8, 2026</strong>, a fragile two-week ceasefire has been agreed upon by the United States, Iran, and Israel.</p>
-        <table>
-            <tr>
-                <td style="padding: 10px;"><strong>Mediator:</strong></td>
-                <td>Pakistan & International Diplomats</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px;"><strong>Key US Demand:</strong></td>
-                <td>Permanent opening of the Strait of Hormuz and total halt of uranium enrichment.</td>
-            </tr>
-            <tr>
-                <td style="padding: 10px;"><strong>Key Iran Demand:</strong></td>
-                <td>Full sanctions relief and guarantees against future military strikes.</td>
-            </tr>
-        </table>
-        <p style="margin-top: 20px; font-style: italic;">Diplomatic efforts are currently underway to transform this temporary truce into a long-term framework for regional stability.</p>
->>>>>>> Stashed changes
+    <section class="war-section">
+        <h2>Regional Implications</h2>
+        <div class="implications-grid">
+            <div class="implication-card">
+                <h3>Energy Markets</h3>
+                <p>Global oil prices surged 40% due to Strait of Hormuz disruptions, affecting worldwide energy security.</p>
+            </div>
+            <div class="implication-card">
+                <h3>Alliance Dynamics</h3>
+                <p>US-Israel military cooperation reached unprecedented levels, while Iran strengthened ties with Russia and China.</p>
+            </div>
+            <div class="implication-card">
+                <h3>Humanitarian Crisis</h3>
+                <p>Over 2 million Iranians displaced by conflict, with international aid efforts severely hampered.</p>
+            </div>
+        </div>
     </section>
-
 </div>
 
-<footer>
-<<<<<<< Updated upstream
-    <center>
-        <p>INTERNAL DATA USE ONLY - UPDATED 16:51:21 | 08 APR 2026</p>
-    </center>
-=======
-    <p>&copy; 2026 Geopolitical Education Project | Current Date: April 8, 2026</p>
->>>>>>> Stashed changes
-</footer>
-
-</body>
-</html>
+<div class="footer-note">
+    <p>CLASSIFIED INTEL - UPDATED 16:51:21 | 08 APR 2026</p>
+</div>
+{% endblock %}
